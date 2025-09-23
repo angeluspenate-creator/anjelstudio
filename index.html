@@ -6,6 +6,51 @@
     <title>ANJEL STUDIO - Diseñador Gráfico y CEO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos para la sección de videos */
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video-item {
+            position: relative;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+
+        .fullscreen-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .fullscreen-btn:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+    </style>
 </head>
 <body>
 
@@ -17,7 +62,7 @@
             <a href="#inicio">Inicio</a>
             <a href="#sobre-mi">Sobre Mí</a>
             <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#videos">Videos</a> <a href="#contacto">Contacto</a>
             <a href="#cotizacion">Cotización</a>
         </nav>
         <div class="hamburger-menu">
@@ -99,6 +144,29 @@
             </div>
             <p class="email-info">También puedes contactarme directamente: <a href="mailto:angeluspenate@gmail.com">angeluspenate@gmail.com</a></p>
         </section>
+
+        ---
+
+        <section id="videos" class="videos-section">
+            <h2>Galería de Videos 🎞️</h2>
+            <p>Echa un vistazo a algunos de mis trabajos y proyectos más recientes.</p>
+            <div class="video-gallery">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/n-NOAMhgWYA?si=6YgzVIzxC7VDlEB-" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/6_sJYkF3uuI?si=9sUhEY3LiezOSD0Y" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/mMzdL-iOhK8?si=st7a3vao_crQc8g-" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/h9Ky35CsZQg?si=W7heuMoaqen69f8p" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        
+        ---
 
         <section id="contacto" class="contact-section">
             <h2>¡Es hora de hablar de ti!</h2>
